@@ -1,0 +1,14 @@
+{
+"classInfo":[
+{
+"className":"体测","week":{
+"startWeek":5,
+"endWeek":12
+},
+"weekday":1,
+"classStartTime":3,
+"classEndTime":4,
+"classroom":""
+
+}]
+}
