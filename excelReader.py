@@ -4,6 +4,7 @@
 import sys
 import json
 import xlrd
+import importlib
 
 __author__ = 'ChanJH'
 # modified for wider application by ytf
@@ -51,7 +52,7 @@ def main():
 	info += "Classroom: " + str(_colOfClassroom) + "列\n"
 	print (info)
 	# info += "输入 0 继续，输入 1 退出："
-	option = raw_input("输入 0 继续，输入其他内容退出：")
+	option = input("输入 0 继续，输入其他内容退出：")
 	if option == "1":
 		sys.exit()
 	
@@ -98,6 +99,5 @@ def main():
 		f.close()
 	print("\nALL DONE !")
 
-reload(sys);
-sys.setdefaultencoding('utf-8');
+importlib.reload(sys);
 main()
